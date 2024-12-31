@@ -68,6 +68,8 @@ else
   echo "|                      Oops!                     |"
   echo "|                Task $taskNumber Failed                 |"
   echo "--------------------------------------------------"
+
+  exit 1
 fi
 
 exit 0
