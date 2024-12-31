@@ -17,5 +17,35 @@ jobs:
     - name: Configuration
       run: make clean
 
-    - name: Run test
-      run: make all
+    - name: Run test 2.1
+      run: make task2_1
+      
+    - name: Run test 2.2
+      run: make task2_2
+      
+    - name: Run test 3.1
+      run: make task3_1
+      
+    - name: Run test 3.2
+      run: make task3_2
+      
+    - name: Run test 3.3
+      run: make task3_3
+      
+    - name: Run test 3.4
+      run: make task3_4
+      
+    - name: Run test 3.5
+      run: make task3_5
+      
+    - name: Run test 3.6
+      run: make task3_6
+      
+    - name: Run test 3.7
+      run: make task3_7
+      
+    - name: Run test 3.8
+      run: make task3_8
+      
+    - name: Run test 3.9
+      run: make task3_9
