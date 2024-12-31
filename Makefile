@@ -22,7 +22,7 @@ TASKS := task2_1 task2_2 task3_1 task3_2 task3_3 task3_4 task3_5 task3_6 task3_7
 all: $(TASKS)
 
 clean:
-	@$(GRADER_COMMAND) rm -r build
+	@$(GRADER_COMMAND) rm -rf build
 
 define task_template
 $(1): src/$(1).c
