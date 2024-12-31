@@ -7,45 +7,68 @@ on:
     branches: [ "master" ]
 
 jobs:
-  build:
-
+  task2_1:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v4
+      - name: Run test 2.1
+        run: make clean task2_1
 
-    - name: Configuration
-      run: make clean
+  task2_2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run test 2.2
+        run: make clean task2_2
 
-    - name: Run test 2.1
-      run: make task2_1
-      
-    - name: Run test 2.2
-      run: make task2_2
-      
-    - name: Run test 3.1
-      run: make task3_1
-      
-    - name: Run test 3.2
-      run: make task3_2
-      
-    - name: Run test 3.3
-      run: make task3_3
-      
-    - name: Run test 3.4
-      run: make task3_4
-      
-    - name: Run test 3.5
-      run: make task3_5
-      
-    - name: Run test 3.6
-      run: make task3_6
-      
-    - name: Run test 3.7
-      run: make task3_7
-      
-    - name: Run test 3.8
-      run: make task3_8
-      
-    - name: Run test 3.9
-      run: make task3_9
+  task3_1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run test 3.1
+        run: make clean task3_1
+
+  task3_2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run test 3.2
+        run: make clean task3_2
+
+  task3_3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run test 3.3
+        run: make clean task3_3
+
+  task3_4:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run test 3.4
+        run: make clean task3_4
+
+  task3_5:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run test 3.5
+        run: make clean task3_5
+
+  task3_6:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run test 3.6
+        run: make clean task3_6
+
+  task3_7:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run test 3.7
+        run: make clean task3_7
+
+  task3_8:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run test 3.8
+        run: make clean task3_8
+
+  task3_9:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run test 3.9
+        run: make clean task3_9
