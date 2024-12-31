@@ -26,15 +26,15 @@ clean:
 
 define task_template
 $(1): src/$(1).c
-	@-$(GRADER_COMMAND) mkdir build $(BUILD_DIR_FLAG) || true
+	@$(GRADER_COMMAND) mkdir -p build $(BUILD_DIR_FLAG) || true
 	@echo "Compiling $(1)..."
-	@-$(CC) -Wall src/$(1).c -o build/$(1)$(EXE_EXTENSION)
+	@$(CC) -Wall src/$(1).c -o build/$(1)$(EXE_EXTENSION)
 	@echo "Running $(1)..."
 ifeq ($(OS),Windows_NT)
 else
 	@-$(ALLOW_PERMISSION_COMMAND) ./$(GRADER_DIR)/$(1)$(GRADER_EXTENSION)
 endif
-	@-$(GRADER_COMMAND) ./$(GRADER_DIR)/$(1)$(GRADER_EXTENSION)
+	@$(GRADER_COMMAND) ./$(GRADER_DIR)/$(1)$(GRADER_EXTENSION)
 endef
 
 
